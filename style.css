@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Black: hsl(212, 21%, 14%);
+    --Grey: hsl(228, 12%, 48%);
+    --Green500: hsl(158, 36%, 37%);
+    --Green700: hsl(158, 42%, 18%);
+    --Cream: hsl(30, 38%, 92%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+body {
+    background-color: var(--Cream);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin-inline: auto;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90dvh;
+}
+
+.container-card * {
+    flex-basis: 50%;
+}
+
+.container-card {
+    display: flex;
+    align-items: center;
+    max-width: 40em;
+    margin: 0 1.5em;
+    background-color: var(--White);
+    overflow-x: hidden;
+    border-radius: 0.8em;
+}
+
+/* .chanel {
+    width: 20em;
+} */
+
+.chanel-mobile{
+    display: none;
+}
+
+.content-column {
+    padding: 2em;
+}
+
+.perfume {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75em;
+    color: var(--Grey);
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    margin-bottom: 8em;
+    /* position: relative; */
+    /* top: -.50em; */
+}
+
+h1 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2.3em;
+    position: relative;
+    top: -2.2em;
+}
+
+.description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.93em;
+    color: var(--Grey);
+    position: relative;
+    top: -4em;
+    line-height: 1.3;
+}
+
+.real-price {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2em;
+    color: var(--Green500);
+    position: relative;
+    top: -1em;
+}
+
+.discount-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85em;
+    color: var(--Grey);
+    margin-left: 1.5em;
+    position: relative;
+    top: -2.5em;
+    text-decoration: line-through;
+}
+
+button {
+    display: block;
+    margin: auto;
+    padding: 1em 5em;
+    background-color: var(--Green500);
+    border: none;
+    border-radius: .75em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .90em;
+    font-weight: 500;
+    color: var(--White);
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+button:hover {
+    background-color: var(--Green700);
+}
+
+.add img {
+    display: inline-block;
+    width: 1em;
+    vertical-align: middle;
+    position: relative;
+    right: .80em;
+}
+
+.attribution {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+@media (max-width: 600px) {
+    .container-card {
+        /* text-align: center; */
+        flex-direction: column;
+        max-width: 23em;
+        margin: 1em;
+    }
+
+    .chanel-desktop {
+        display: none;
+        width: 50em;
+    }
+
+    .chanel-mobile{
+        display: block;
+    }
+}
